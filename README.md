@@ -31,7 +31,7 @@
 		
 		- **Code Review** - Once a developer has completed a ticket they will open a pull-request (PR) to add the changes they made into the code base, in order to do this one of the other developers must take a look at the code and ensure that everything looks up to standard and should work well. If all is good, the PR will be approved and the changed will reflect on the sandbox website
 		
-		- **IT testing** - once the PR is merged it will be pushed into our developer sandbox, from there the developer  who worked on the ticket must go and test out the changes to make sure everything is working as expected, ie nothing is broken, no other features or sections of the application are hindered with the new change
+		- **IT Testing** - once the PR is merged it will be pushed into our developer sandbox, from there the developer  who worked on the ticket must go and test out the changes to make sure everything is working as expected, ie nothing is broken, no other features or sections of the application are hindered with the new change
 		
 		- **Ready For UAT** - Once a ticket has passed IT testing, the person who completed the IT testing will move to the ticket to this column to notify others that the ticket is ready for UAT 
 		
