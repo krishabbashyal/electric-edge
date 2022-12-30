@@ -23,22 +23,22 @@
 ## Our Development Workflow:
 - **Kanban Software & Project Management Tool**: We will be making use of a Kanban board to keep everyone on the same page in terms of progression and what everyone is currently working on.
 	- Our workflow will be separated into different columns on the board, each column will represent a specific stage in the ticket's cycle. 
-		- Backlog - These will be things that will need to be done at some point, but as of now they are blocked and are not prioritized
+		- **Backlog** - These will be things that will need to be done at some point, but as of now they are blocked and are not prioritized
 		
-		- To Do - These are issues that are ready to be worked on, and can be picked up by and one of the developers, tickets will be prioritized, so complete the highest priority ticket that you are able to
+		- **To Do** - These are issues that are ready to be worked on, and can be picked up by and one of the developers, tickets will be prioritized, so complete the highest priority ticket that you are able to
 		
-		- In Progress - Tickets in this column are being worked on by another developer, meaning that if you wish to work on this ticket you must first communicate with the current ticket holder, either ask to have it, or contribute on it together.  
+		- **In Progress** - Tickets in this column are being worked on by another developer, meaning that if you wish to work on this ticket you must first communicate with the current ticket holder, either ask to have it, or contribute on it together.  
 		
-		- Code Review - Once a developer has completed a ticket they will open a pull-request (PR) to add the changes they made into the code base, in order to do this one of the other developers must take a look at the code and ensure that everything looks up to standard and should work well. If all is good, the PR will be approved and the changed will reflect on the sandbox website
+		- **Code Review** - Once a developer has completed a ticket they will open a pull-request (PR) to add the changes they made into the code base, in order to do this one of the other developers must take a look at the code and ensure that everything looks up to standard and should work well. If all is good, the PR will be approved and the changed will reflect on the sandbox website
 		
-		- IT testing - once the PR is merged it will be pushed into our developer sandbox, from there the developer  who worked on the ticket must go and test out the changes to make sure everything is working as expected, ie nothing is broken, no other features or sections of the application are hindered with the new change
+		- **IT testing** - once the PR is merged it will be pushed into our developer sandbox, from there the developer  who worked on the ticket must go and test out the changes to make sure everything is working as expected, ie nothing is broken, no other features or sections of the application are hindered with the new change
 		
-		- Ready For UAT - Once a ticket has passed IT testing, the person who completed the IT testing will move to the ticket to this column to notify others that the ticket is ready for UAT 
+		- **Ready For UAT** - Once a ticket has passed IT testing, the person who completed the IT testing will move to the ticket to this column to notify others that the ticket is ready for UAT 
 		
-		-  UAT Testing - is similar to IT testing, but the testing is done by someone other than the developer who worked on the ticket, this allows for a second protection system in the event that there is something that the original developer did not catch.
+		-  **UAT Testing** - is similar to IT testing, but the testing is done by someone other than the developer who worked on the ticket, this allows for a second protection system in the event that there is something that the original developer did not catch.
 		
-		- Ready for Production - this is where tickets that are 100% completed will sit, the only thing left to do is push it to the live site. This will be done manually once we have completed major feature sets
+		- **Ready for Production** - this is where tickets that are 100% completed will sit, the only thing left to do is push it to the live site. This will be done manually once we have completed major feature sets
 		
-		- Completed, ticket is done and no other work is required, if changes need to be made another ticket should be created
+		- **Completed** - ticket is done and no other work is required, if changes need to be made another ticket should be created
     
 
