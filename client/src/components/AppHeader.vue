@@ -14,7 +14,7 @@ export default {
 
 h1{
   color: #0066FF;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   padding: 2.4rem;
   font-style: normal;
   font-weight: 800;
