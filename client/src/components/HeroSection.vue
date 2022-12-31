@@ -17,8 +17,8 @@ export default {
   letter-spacing: .03rem;
 }
 h1 {
-  font-size: 2.1rem;
-  width: 18rem;
+  font-size: 2.25rem;
+  width: 19rem;
   text-align: center;
   font-weight: 900;
   margin:auto;
