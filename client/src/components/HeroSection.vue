@@ -17,12 +17,13 @@ export default {
   letter-spacing: .03rem;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   width: 19rem;
   text-align: center;
   font-weight: 900;
   margin:auto;
   margin-top: .7rem;
+
 }
 p {
   font-size: 1.25rem;
