@@ -18,9 +18,9 @@ export default {
 }
 h1 {
   font-size: 2.1rem;
-  width: 18rem;
+  width: 19rem;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   margin:auto;
   margin-top: .7rem;
 }
