@@ -23,6 +23,7 @@
 ## Our Development Workflow:
 - **Kanban Software & Project Management Tool**: We will be making use of a Kanban board to keep everyone on the same page in terms of progression and what everyone is currently working on.
 	- Our workflow will be separated into different columns on the board, each column will represent a specific stage in the ticket's cycle. 
+	
 		- **Backlog** - These will be things that will need to be done at some point, but as of now they are blocked and are not prioritized
 		
 		- **To Do** - These are issues that are ready to be worked on, and can be picked up by and one of the developers, tickets will be prioritized, so complete the highest priority ticket that you are able to
