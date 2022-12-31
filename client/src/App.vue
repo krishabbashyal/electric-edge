@@ -2,12 +2,14 @@
   <app-header/>
   <hero-section/>
   <about-application/>
+  <get-started/>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutApplication from './components/AboutApplication.vue'
+import GetStarted from './components/GetStarted.vue'
 
 
 
@@ -16,7 +18,8 @@ export default {
   components: {
     AppHeader,
     HeroSection,
-    AboutApplication
+    AboutApplication,
+    GetStarted
   }
 }
 </script>

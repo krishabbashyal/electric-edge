@@ -14,24 +14,28 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  width: 17rem;
   text-align: center;
   font-weight: 800;
-  margin-bottom: 0;
+  margin:auto;
+  margin-top: .7rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: -1rem;
+  margin: auto;
+  margin-top: .5rem;
+  font-weight: 300;
+
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 420px;
-  height: 300px
+
 }
 
 </style>
