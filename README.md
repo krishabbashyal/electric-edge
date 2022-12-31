@@ -20,6 +20,8 @@
 
 ## Local Setup Steps:
 
+For work on the client side, you should install the Vetur extention for Visual Studio Code
+
 ## Our Development Workflow:
 - **Kanban Software & Project Management Tool**: We will be making use of a Kanban board to keep everyone on the same page in terms of progression and what everyone is currently working on.
 	- Our workflow will be separated into different columns on the board, each column will represent a specific stage in the ticket's cycle. 
