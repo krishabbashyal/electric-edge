@@ -18,7 +18,7 @@ export default {
 }
 h1 {
   font-size: 2.1rem;
-  width: 20rem;
+  width: 18rem;
   text-align: center;
   font-weight: 800;
   margin:auto;
@@ -26,7 +26,7 @@ h1 {
 }
 p {
   font-size: 1.25rem;
-  width: 20rem;
+  width: 15rem;
   text-align: center;
   margin: auto;
   margin-top: .5rem;
