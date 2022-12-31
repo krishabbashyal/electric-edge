@@ -13,20 +13,24 @@ export default {
 </script>
 
 <style scoped>
+*{
+  letter-spacing: .03rem;
+}
 h1 {
-  font-size: 2rem;
-  width: 17rem;
+  font-size: 2.1rem;
+  width: 20rem;
   text-align: center;
   font-weight: 800;
   margin:auto;
   margin-top: .7rem;
 }
 p {
-  font-size: 1.2rem;
-  width: 15rem;
+  font-size: 1.25rem;
+  width: 20rem;
   text-align: center;
   margin: auto;
   margin-top: .5rem;
+  margin-bottom: -1rem;
   font-weight: 300;
 
 }
