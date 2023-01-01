@@ -24,7 +24,7 @@
 
     .footer{
         background-color: #ffffff;
-        width: 150rem;
+        width: calc(100%);
         height: 7rem;
         border-top: 1px solid rgba(0, 0, 0, 0.301);
         background: linear-gradient(180deg, #090724 30.21%, #002B6C 100%);
