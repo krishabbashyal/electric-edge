@@ -14,7 +14,6 @@ import GetStarted from './components/GetStarted.vue'
 import AppFooter from './components/GlobalAppFooter.vue'
 
 
-
 export default {
   name: 'App',
   components: {
@@ -28,6 +27,12 @@ export default {
 </script>
 
 <style>
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~@/assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
 * {
   font-family: 'Inter';
   margin: 0;
