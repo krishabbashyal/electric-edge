@@ -3,6 +3,7 @@
   <hero-section/>
   <about-application/>
   <get-started/>
+  <app-footer/>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import AppHeader from './components/AppHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutApplication from './components/AboutApplication.vue'
 import GetStarted from './components/GetStarted.vue'
+import AppFooter from './components/GlobalAppFooter.vue'
 
 
 
@@ -19,7 +21,8 @@ export default {
     AppHeader,
     HeroSection,
     AboutApplication,
-    GetStarted
+    GetStarted,
+    AppFooter
   }
 }
 </script>
