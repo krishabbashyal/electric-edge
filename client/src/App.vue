@@ -2,10 +2,6 @@
   <app-header/>
   <hero-section/>
   <about-application/>
-  <about-application/>
-  <about-application/>
-  <about-application/>
-  <about-application/>
   <get-started/>
   <app-footer/>
 </template>

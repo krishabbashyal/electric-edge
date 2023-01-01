@@ -6,7 +6,7 @@
         <h2>
             Terms and Conditions  <br>
             Privacy Policy  <br>
-            Copyright © 2022
+            Copyright © 2023
         </h2>
     </div>
 </template>
