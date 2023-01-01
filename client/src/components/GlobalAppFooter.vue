@@ -37,7 +37,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 0.8rem;
-  line-height: 1.1rem;
+  line-height: 1.2rem;
   color: #ffffff;
 }
 </style>
