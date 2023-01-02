@@ -41,8 +41,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 2.5rem;
-  padding: 1rem;
+  height: 2.75rem;
+  padding: .75rem;
   background-color: #0066ff;;
   border-radius: 100%;
   margin-bottom: .75rem;
