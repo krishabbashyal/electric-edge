@@ -34,7 +34,7 @@ export default {
 
 .para{
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     width: 18rem;
     text-align: center;
 }
