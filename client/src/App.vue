@@ -1,27 +1,29 @@
 <template>
-  <app-header/>
-  <hero-section/>
-  <about-application/>
-  <get-started/>
-  <app-footer/>
+  <div>
+    <navigation-bar/>
+    <hero-section/>
+    <about-application/>
+    <how-it-works/>
+    <application-footer/>
+  </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
+import NavigationBar from './components/NavigationBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutApplication from './components/AboutApplication.vue'
-import GetStarted from './components/GetStarted.vue'
-import AppFooter from './components/GlobalAppFooter.vue'
+import HowItWorks from './components/HowItWorks.vue'
+import ApplicationFooter from './components/ApplicationFooter.vue'
 
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
+    NavigationBar,
     HeroSection,
     AboutApplication,
-    GetStarted,
-    AppFooter
+    HowItWorks,
+    ApplicationFooter
   }
 }
 </script>
