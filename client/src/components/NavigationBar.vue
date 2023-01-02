@@ -9,12 +9,13 @@
         <li>Sign Up</li>
         <li>Log In</li>
       </ul>
-      <img
+      <v-button v-else class="DropdownMenu" @click="dropDown">
+        <img
         class="menu-icon"
-        v-else
         src="../assets/images/MenuIcon.png"
         alt=""
       />
+      </v-button>
     </div>
   </div>
 </template>
@@ -25,6 +26,7 @@ export default {
     return {
       desktopView: true,
       windowWidth: window.innerWidth,
+      displayMenu: false,
     };
   },
   created() {
@@ -42,6 +44,9 @@ export default {
       } else {
         this.desktopView = true;
       }
+    },
+    dropDown(){
+      console.log("Button Pressed");
     },
   },
 
@@ -93,5 +98,8 @@ h1 {
   width: 1.75rem;
   margin: auto;
   margin-right: 2rem;
+}
+.DropdownMenu{
+  padding-top: 2rem;
 }
 </style>
