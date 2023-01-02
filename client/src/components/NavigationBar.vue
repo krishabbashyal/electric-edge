@@ -45,7 +45,7 @@ export default {
     },
   },
 
-  name: "AppHeader",
+  name: "NavigationBar",
 };
 </script>
 
