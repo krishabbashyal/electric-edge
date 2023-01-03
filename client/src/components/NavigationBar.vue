@@ -53,7 +53,6 @@ export default {
 .bold-color{
    color: #0066ff;
   font-weight: 800;
-  box-shadow: black;
 }
 .header {
   position: fixed;
