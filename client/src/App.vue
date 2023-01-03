@@ -5,7 +5,6 @@
     <about-application />
     <how-it-works />
     <landing-page-footer />
-    <application-footer />
   </div>
 </template>
 
@@ -15,7 +14,6 @@ import HeroSection from "./components/HeroSection.vue";
 import AboutApplication from "./components/AboutApplication.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import LandingPageFooter from "./components/LandingPageFooter.vue";
-import ApplicationFooter from "./components/ApplicationFooter.vue";
 
 export default {
   name: "App",
@@ -25,7 +23,6 @@ export default {
     AboutApplication,
     HowItWorks,
     LandingPageFooter,
-    ApplicationFooter,
   },
 };
 </script>
