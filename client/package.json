@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@innologica/vue-dropdown-menu": "^0.1.4",
+    "@syncfusion/ej2-vue-dropdowns": "^20.4.40",
+    "@syncfusion/ej2-vue-splitbuttons": "^20.4.40",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },

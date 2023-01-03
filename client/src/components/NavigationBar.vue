@@ -16,6 +16,12 @@
         alt=""
       />
       </v-button>
+      <div id="Menu_id" class="Menu">
+        <li><a href="">Data science</a></li>
+        <li><a href="">Data analysis</a></li>
+        <li><a href="">Data mining</a></li>
+        <li><a href="">Data warehousing</a></li>
+      </div>
     </div>
   </div>
 </template>
@@ -46,6 +52,14 @@ export default {
       }
     },
     dropDown(){
+      var Menu = document.getElementById("Menu_id");
+
+      if (Menu.style.display == "block") {
+        Menu.style.display="none";
+      } 
+      else {
+        Menu.style.display = "block";
+      }
       console.log("Button Pressed");
     },
   },
@@ -102,4 +116,34 @@ h1 {
 .DropdownMenu{
   padding-top: 2rem;
 }
+
+.Menu {
+  display: none;
+  position: right;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.Menu li {
+  color: black;
+  text-align: center;
+  display: block;
+  list-style: none;
+  background-color: inherit;
+  font-style: normal;
+  border: 1px solid white;
+}
+
+.Menu li a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 10px;
+}
+
+.Menu li:hover {
+  background-color: #818a8f;
+  color: white;
+}
+
 </style>
