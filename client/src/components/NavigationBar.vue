@@ -11,17 +11,18 @@
       </ul>
       <div v-else class="dropdown_list">
         <v-button class="DropdownMenu" @click="dropDown">
-        <img
-        class="menu-icon"
-        src="../assets/images/MenuIcon.png"
-        alt=""
-      />
-      </v-button>
-      <div id="Menu_id" class="Menu">
-        <li><a href="">About</a></li>
-        <li><a href="">Sign Up</a></li>
-        <li><a href="">Login</a></li>
-      </div>
+          <img
+          class="menu-icon"
+          src="../assets/images/MenuIcon.png"
+          alt=""
+          />
+        </v-button>
+        
+        <div id="Menu_id" class="Menu">
+          <li><a href="">About</a></li>
+          <li><a href="">Sign Up</a></li>
+          <li><a href="">Login</a></li>
+        </div>
       </div>
       
     </div>
@@ -119,27 +120,32 @@ h1 {
   padding-top: 2rem;
 }
 
+
 .Menu {
   display: none;
-  position: left;
+  position: absolute;
   background-color: #FFFFFF;
-  z-index: 1;
+  right: 1rem;
+  left: auto;
 }
 
 .Menu li {
+  margin-right:2rem;
+  position:right;
   color: black;
   text-align: center;
-  display: block;
+  display: grid;
   list-style: none;
   background-color: inherit;
-  font-style: normal;
+  font-style: bold;
   border: 1px solid white;
+  
 }
 
 .Menu li a {
   text-decoration: none;
   color: #000000;
-  display: block;
+  display: grid;
   padding: 1rem;
 }
 
