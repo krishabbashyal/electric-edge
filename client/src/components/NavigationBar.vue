@@ -2,7 +2,7 @@
   <div class="header-spacing">
     <div class="header">
       <h1>ElectricEdge</h1>
-      <ul v-if="desktopView">
+      <ul class="bold-color" v-if="desktopView">
         <li>About</li>
         <li>Contact</li>
         <li>Contribute</li>
@@ -50,6 +50,10 @@ export default {
 </script>
 
 <style scoped>
+.bold-color{
+   color: #0066ff;
+  font-weight: 800;
+}
 .header {
   position: fixed;
   background-color: #ffffff;
