@@ -9,7 +9,8 @@
         <li>Sign Up</li>
         <li>Log In</li>
       </ul>
-      <v-button v-else class="DropdownMenu" @click="dropDown">
+      <div v-else class="dropdown_list">
+        <v-button class="DropdownMenu" @click="dropDown">
         <img
         class="menu-icon"
         src="../assets/images/MenuIcon.png"
@@ -17,11 +18,12 @@
       />
       </v-button>
       <div id="Menu_id" class="Menu">
-        <li><a href="">Data science</a></li>
-        <li><a href="">Data analysis</a></li>
-        <li><a href="">Data mining</a></li>
-        <li><a href="">Data warehousing</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Sign Up</a></li>
+        <li><a href="">Login</a></li>
       </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -113,13 +115,13 @@ h1 {
   margin: auto;
   margin-right: 2rem;
 }
-.DropdownMenu{
+.dropdown_list{
   padding-top: 2rem;
 }
 
 .Menu {
   display: none;
-  position: right;
+  position: left;
   background-color: #FFFFFF;
   z-index: 1;
 }
@@ -138,11 +140,11 @@ h1 {
   text-decoration: none;
   color: #000000;
   display: block;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .Menu li:hover {
-  background-color: #818a8f;
+  background-color: #e6e6e6;
   color: white;
 }
 
