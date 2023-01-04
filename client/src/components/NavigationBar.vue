@@ -9,12 +9,19 @@
         <li>Sign Up</li>
         <li>Log In</li>
       </ul>
-      <img
-        class="menu-icon"
-        v-else
-        src="../assets/images/MenuIcon.png"
-        alt=""
-      />
+      <div v-else class="responsive-menu-container">
+        <button class="menu-button" @click="toggleDropdown">
+          <img class="menu-icon" @click="selectImage" :src="menuIcon" alt="" />
+        </button>
+
+        <div v-if="displayMenu" class="menu-dropdown bold-color">
+          <li>About</li>
+          <li>Contact</li>
+          <li>Contribute</li>
+          <li>Sign Up</li>
+          <li>Login</li>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -25,6 +32,8 @@ export default {
     return {
       desktopView: true,
       windowWidth: window.innerWidth,
+      displayMenu: false,
+      menuIcon: require("../assets/images/MenuIcon.png"),
     };
   },
   created() {
@@ -43,6 +52,14 @@ export default {
         this.desktopView = true;
       }
     },
+    toggleDropdown() {
+      this.displayMenu = !this.displayMenu;
+      if (this.displayMenu == false) {
+        this.menuIcon = require("../assets/images/MenuIcon.png");
+      } else {
+        this.menuIcon = require("../assets/images/CloseMenuIcon.png");
+      }
+    },
   },
 
   name: "NavigationBar",
@@ -50,6 +67,7 @@ export default {
 </script>
 
 <style scoped>
+
 .bold-color{
    color: #0066ff;
   font-weight: 800;
@@ -76,6 +94,10 @@ h1 {
   line-height: 2rem;
 }
 
+button {
+  background: none;
+  border: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -97,5 +119,25 @@ h1 {
   width: 1.75rem;
   margin: auto;
   margin-right: 2rem;
+}
+.responsive-menu-container {
+  padding-top: 2rem;
+}
+
+.menu-dropdown li {
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+.menu-dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  border-radius: 5px;
+  right: 1rem;
+}
+
+.menu-dropdown li {
+  width: calc(83%);
 }
 </style>
