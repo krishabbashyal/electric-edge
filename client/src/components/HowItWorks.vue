@@ -5,8 +5,6 @@
         <get-started-steps image="Research.png" message="Search for potential chargers in your area"/>
         <get-started-steps image="Connection.png" message="Send a request to book the charger for as long as needed"/>
         <get-started-steps image="Charge.png" message="Get to the charger and charge your vehicle in the alloted time"/>
-        
-
     </div>
 </template>
 
