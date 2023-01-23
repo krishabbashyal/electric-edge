@@ -5,6 +5,7 @@
     <about-application />
     <how-it-works />
     <landing-page-footer />
+    <charger-card chargerImage="DallasCharger.png" chargerCity="Dallas, TX" chargerCategory="Level 2 J-1772 charger" chargerPrice="5.40/hr"/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeroSection from "./components/HeroSection.vue";
 import AboutApplication from "./components/AboutApplication.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import LandingPageFooter from "./components/LandingPageFooter.vue";
+import ChargerCard from "./components/ChargerCard.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     AboutApplication,
     HowItWorks,
     LandingPageFooter,
+    ChargerCard
   },
 };
 </script>
