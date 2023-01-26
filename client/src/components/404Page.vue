@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavigationBar/>
     <h1>ERROR 404</h1>
     <h3>Page not found</h3>
     <p>
@@ -12,12 +13,20 @@
       src="../assets/images/404PagePicture.png"
       alt="Extension Cord Unplugged"
     />
+    <ApplicationFooter/>
   </div>
 </template>
 
 <script>
+import ApplicationFooter from "./ApplicationFooter.vue"
+import NavigationBar from "./NavigationBar.vue";
+
 export default {
   name: "doesntExist",
+  components:{
+    ApplicationFooter,
+    NavigationBar,
+  }
 };
 </script>
 
@@ -35,16 +44,15 @@ h1 {
   text-align: center;
   font-weight: 900;
   margin: auto;
-  margin-top: 0.7rem;
+  margin-top: 4rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 15rem;
   text-align: center;
   margin: auto;
-  margin-top: 0.5rem;
-  /* margin-bottom: -1rem; */
-  font-weight: 300;
+  margin-top: .5rem;
+  font-weight: 600;
   color: #0066ff;
 }
 p {
@@ -53,7 +61,6 @@ p {
   text-align: center;
   margin: auto;
   margin-top: 1rem;
-  /* margin-bottom: -1rem; */
   font-weight: 300;
 }
 button {
@@ -72,6 +79,6 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:max-content;
+  width: 100%;
 }
 </style>

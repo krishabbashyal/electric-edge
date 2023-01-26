@@ -1,30 +1,30 @@
 <template>
   <div>
-    <navigation-bar />
+    <!-- <navigation-bar /> -->
     <doesntExist />
     <!-- <hero-section />
     <about-application />
     <how-it-works /> -->
-    <landing-page-footer />
+    <!-- <landing-page-footer /> -->
   </div>
 </template>
 
 <script>
-import NavigationBar from "./components/NavigationBar.vue";
+// import NavigationBar from "./components/NavigationBar.vue";
 // import HeroSection from "./components/HeroSection.vue";
 // import AboutApplication from "./components/AboutApplication.vue";
 // import HowItWorks from "./components/HowItWorks.vue";
-import LandingPageFooter from "./components/LandingPageFooter.vue";
+// import LandingPageFooter from "./components/LandingPageFooter.vue";
 import doesntExist from "./components/404Page.vue";
 
 export default {
   name: "App",
   components: {
-    NavigationBar,
+    // NavigationBar,
     // HeroSection,
     // AboutApplication,
     // HowItWorks,
-    LandingPageFooter,
+    // LandingPageFooter,
     doesntExist,
   },
 };
