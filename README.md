@@ -31,7 +31,7 @@ For work on the client side, you should install the Vetur extention for Visual S
 		- **Ready for Work** - These are issues that are ready to be worked on, and can be picked up by and one of the developers, tickets will be prioritized, so complete the highest priority ticket that you are able to.
 		
 		- **In Progress** - Tickets in this column are being worked on by another developer, meaning that if you wish to work on this ticket you must first communicate with the current ticket holder, either ask to have it, or contribute on it together. 
-		- 
+
 		- **IT/Design Testing** - Before the PR is merged it will be pulled from GitHub to local, from there another developer who did not work on the ticket must go and test out the changes to make sure everything is working as expected, ie nothing is broken, no other features or sections of the application are hindered with the new change, and/or the design is accurate with the files in Figma.
 		
 		- **Code Review** - Once a developer has completed a ticket they will open a pull-request (PR) to add the changes they made into the code base, in order to do this one of the other developers must take a look at the code and ensure that everything looks up to standard and should work well. If all is good, the PR will be approved and the changed will reflect on the sandbox website.
