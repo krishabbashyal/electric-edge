@@ -38,6 +38,6 @@ For work on the client side, you should install the Vetur extention for Visual S
 			
 		- **Ready for Production** - this is where tickets that are 100% completed will sit, the only thing left to do is push it to the live site. This will be done manually once we have completed major feature sets.
 		
-		- **In Prod** - ticket is done and no other work is required, if changes need to be made another ticket should be created.
+		- **In Production** - ticket is done and no other work is required, if changes need to be made another ticket should be created.
     
 
