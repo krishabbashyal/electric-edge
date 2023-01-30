@@ -1,58 +1,40 @@
 <template>
-    <div class="width-container">
-    <div class='charger-card'>
-        <img :src="require(`../assets/images/${chargerImage}`)" />
-        <p class="blue-highlight">{{chargerCity}}</p>
-        <p class="faded-blk">{{chargerCategory}}</p>
-        <p class="faded-blk">{{chargerPrice}}</p>
+  <div class="width-container">
+    <div class="charger-card">
+      <!-- <img :src="require(`../assets/images/${chargerData.image}`)" /> -->
+      <p>{{ chargerData.image }}</p>
+      <p class="blue-highlight">{{ chargerData.location }}</p>
+      <p class="faded-blk">{{ chargerData.type }}</p>
+      <p class="faded-blk">{{ chargerData.price }}</p>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "ChargerCard",
   props: {
-    chargerImage: {
-        type: String,
-        required: true
+    chargerData: {
+      type: Object,
+      required: true,
     },
-    chargerCity: {
-        type: String,
-        required: true
-    },
-    chargerCategory: {
-        type: String,
-        required: true
-    },
-    chargerPrice: {
-        type: String,
-        required: true
-    }
-  }
+  },
 };
 </script>
 
 <style scoped>
-
-.width-container{
+.width-container {
   margin: 15px;
   display: flex;
   justify-content: center;
-  
 }
 
-
-
-.blue-highlight{ 
-    color: #589BFF;
-    font-weight: bold;
+.blue-highlight {
+  color: #589bff;
+  font-weight: bold;
 }
 
-.faded-blk{
-   color:#737373
+.faded-blk {
+  color: #737373;
 }
-
 </style>
-
-
