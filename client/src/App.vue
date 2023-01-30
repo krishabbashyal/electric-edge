@@ -5,9 +5,9 @@
     <about-application />
     <how-it-works />
     <landing-page-footer />
-    <charger-card chargerImage="DallasCharger.png" chargerCity="Dallas, TX" chargerCategory="Level 2 J-1772 charger" chargerPrice="5.40/hr"/>
-    <charger-card chargerImage="ShrevportCharger.png" chargerCity="Shreveport, LA" chargerCategory="Level 3 CCS2 charger" chargerPrice="19.35/hr"/>
-    <charger-card chargerImage="HotSpringsCharger.png" chargerCity="Hot Springs, AR" chargerCategory="Level 2 J-1772 charger" chargerPrice="9.35/hr"/>
+    <div v-for="charger in chargers" :key="charger.id">
+      <charger-card :chargerData="charger" />
+    </div>
   </div>
 </template>
 
@@ -19,6 +19,8 @@ import HowItWorks from "./components/HowItWorks.vue";
 import LandingPageFooter from "./components/LandingPageFooter.vue";
 import ChargerCard from "./components/ChargerCard.vue";
 
+import axios from "axios";
+
 export default {
   name: "App",
   components: {
@@ -27,7 +29,17 @@ export default {
     AboutApplication,
     HowItWorks,
     LandingPageFooter,
-    ChargerCard
+    ChargerCard,
+  },
+  data() {
+    return {
+      chargers: [],
+    };
+  },
+  async mounted() {
+    let result = await axios.get("http://localhost:3000/");
+    this.chargers = result.data.chargers;
+    console.log(this.chargers);
   },
 };
 </script>
