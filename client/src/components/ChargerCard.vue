@@ -1,8 +1,7 @@
 <template>
   <div class="width-container">
     <div class="charger-card">
-      <!-- <img :src="require(`../assets/images/${chargerData.image}`)" /> -->
-      <p>{{ chargerData.image }}</p>
+      <img :src="require(`../assets/images/${chargerData.image}`)" />
       <p class="blue-highlight">{{ chargerData.location }}</p>
       <p class="faded-blk">{{ chargerData.type }}</p>
       <p class="faded-blk">{{ chargerData.price }}</p>
