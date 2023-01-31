@@ -1,32 +1,32 @@
 <template>
   <div>
-    <NavigationBar/>
-    <h1>ERROR 404</h1>
+    <NavigationBar />
+    <h1>Error 404</h1>
     <h3>Page not found</h3>
     <p>
       Whoops! we searched all over,<br />
       but the page you are looking<br />
       for does not exist
     </p>
-    <button>Return to homepage</button>
+    <button><div class="ButtonContent">Return to homepage</div></button>
     <img
       src="../assets/images/404PagePicture.png"
       alt="Extension Cord Unplugged"
     />
-    <ApplicationFooter/>
+    <ApplicationFooter />
   </div>
 </template>
 
 <script>
-import ApplicationFooter from "./ApplicationFooter.vue"
+import ApplicationFooter from "./ApplicationFooter.vue";
 import NavigationBar from "./NavigationBar.vue";
 
 export default {
   name: "doesntExist",
-  components:{
+  components: {
     ApplicationFooter,
     NavigationBar,
-  }
+  },
 };
 </script>
 
@@ -39,46 +39,74 @@ export default {
 }
 
 h1 {
-  font-size: 2.2rem;
-  width: 19rem;
-  text-align: center;
-  font-weight: 900;
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height */
+  display: flex;
+  text-align: center;
 }
 h3 {
-  font-size: 1.5rem;
-  width: 15rem;
-  text-align: center;
   margin: auto;
-  margin-top: .5rem;
-  font-weight: 600;
+  margin-top: 0.25rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  text-align: center;
   color: #0066ff;
 }
 p {
-  font-size: 0.75rem;
-  width: 15rem;
-  text-align: center;
   margin: auto;
   margin-top: 1rem;
-  font-weight: 300;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+
+  text-align: center;
+
+  color: #000000;
 }
 button {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   border-radius: 10px;
   color: #fff;
-  background-color: #0066FF;
+  background-color: #0066ff;
   border: none;
   font-style: normal;
   margin: auto;
   margin-top: 1rem;
+  height: 45px;
 }
+.ButtonContent {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  text-align: center;
 
+  color: #ffffff;
+}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.9rem;
   width: 100%;
 }
 </style>
