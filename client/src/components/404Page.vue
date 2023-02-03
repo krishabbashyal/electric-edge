@@ -1,18 +1,20 @@
 <template>
   <div>
     <NavigationBar />
-    <h1>Error 404</h1>
-    <h3>Page not found</h3>
-    <p>
-      Whoops! we searched all over,<br />
-      but the page you are looking<br />
-      for does not exist
-    </p>
-    <button><div class="ButtonContent">Return to homepage</div></button>
-    <img
-      src="../assets/images/404PagePicture.png"
-      alt="Extension Cord Unplugged"
-    />
+    <div class="ErrorMsg">
+      <h1>Error 404</h1>
+      <h3>Page not found</h3>
+      <p>
+        Whoops! we searched all over,<br />
+        but the page you are looking<br />
+        for does not exist
+      </p>
+      <button><div class="ButtonContent">Return to homepage</div></button>
+      <img
+        src="../assets/images/404PagePicture.png"
+        alt="Extension Cord Unplugged"
+      />
+    </div>
     <ApplicationFooter />
   </div>
 </template>
@@ -22,7 +24,7 @@ import ApplicationFooter from "./ApplicationFooter.vue";
 import NavigationBar from "./NavigationBar.vue";
 
 export default {
-  name: "doesntExist",
+  name: "Error404NotFound",
   components: {
     ApplicationFooter,
     NavigationBar,
@@ -39,8 +41,9 @@ export default {
 }
 
 h1 {
-  margin: auto;
-  margin-top: 6rem;
+  /* margin: auto; */
+  margin-bottom: 1rem;
+  /* margin-top: 5vh; */
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
@@ -51,8 +54,8 @@ h1 {
   text-align: center;
 }
 h3 {
-  margin: auto;
-  margin-top: 0.25rem;
+  margin-bottom: 0rem;
+  /* margin-top: 0.25rem; */
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -64,17 +67,15 @@ h3 {
 }
 p {
   margin: auto;
-  margin-top: 1rem;
-
+  margin-bottom: 1rem;
+  margin-top: .3rem;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   display: flex;
-
   text-align: center;
-
   color: #000000;
 }
 button {
@@ -87,7 +88,15 @@ button {
   font-style: normal;
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 45px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  width: 100%;
 }
 .ButtonContent {
   font-family: "Inter";
@@ -102,11 +111,8 @@ button {
 
   color: #ffffff;
 }
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.9rem;
-  width: 100%;
+.ErrorMsg {
+  max-height: 85vh;
+  padding-top: 10vw;
 }
 </style>

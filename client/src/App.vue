@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <navigation-bar /> -->
-    <doesntExist />
+    <Error404NotFound />
     <!-- <hero-section />
     <about-application />
     <how-it-works /> -->
@@ -15,7 +15,7 @@
 // import AboutApplication from "./components/AboutApplication.vue";
 // import HowItWorks from "./components/HowItWorks.vue";
 // import LandingPageFooter from "./components/LandingPageFooter.vue";
-import doesntExist from "./components/404Page.vue";
+import Error404NotFound from "./components/404Page.vue";
 
 export default {
   name: "App",
@@ -25,7 +25,7 @@ export default {
     // AboutApplication,
     // HowItWorks,
     // LandingPageFooter,
-    doesntExist,
+    Error404NotFound,
   },
 };
 </script>
