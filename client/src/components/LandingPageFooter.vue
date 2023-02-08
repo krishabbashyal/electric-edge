@@ -9,6 +9,9 @@
       <p class="or-text">or</p>
       <button class="btn login-btn">Login</button>
     </div>
+    <div class="guest-option">
+      <a class="guest-link" href="#">Continue as a guest</a>
+    </div>
     <hr class="horizontal-line" />
     <div class="footer">
       <h1>ElectricEdge</h1>
@@ -34,8 +37,8 @@ export default {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
-  margin-bottom: 1.6rem;
+  padding: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .btn {
@@ -50,6 +53,7 @@ export default {
 
 .btn:hover {
   background-color: #1864ab;
+  cursor: pointer;
 }
 
 .or-text {
@@ -73,12 +77,22 @@ export default {
   width: 60%;
   margin: auto;
 }
+
+.guest-option {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.guest-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* GLOBAL FOOTER */
 /********************************************************************************************************/
 .footer {
   width: calc(100%);
   height: 7rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.301);
   padding-bottom: 2.4rem;
 }
 
