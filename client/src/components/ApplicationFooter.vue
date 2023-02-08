@@ -20,6 +20,7 @@ export default {
   height: 7rem;
   border-top: 1px solid rgba(0, 0, 0, 0.301);
   background: linear-gradient(180deg, #090724 30.21%, #002b6c 100%);
+
   padding-bottom: .5rem;
   position: absolute;
   bottom: 0;
