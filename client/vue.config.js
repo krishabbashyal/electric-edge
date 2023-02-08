@@ -4,5 +4,10 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  publicPath: ''
+  publicPath: '',
+  configureWebpack: {
+    devServer: {
+      historyApiFallback: true
+    }
+  }
 }

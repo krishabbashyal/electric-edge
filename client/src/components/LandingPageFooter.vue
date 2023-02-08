@@ -10,7 +10,7 @@
       <button class="btn login-btn">Login</button>
     </div>
     <div class="guest-option">
-      <a class="guest-link" href="#">Continue as a guest</a>
+      <a class="guest-link" href="/home">Continue as a guest</a>
     </div>
     <hr class="horizontal-line" />
     <div class="footer">
