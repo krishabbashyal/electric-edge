@@ -18,6 +18,18 @@ export default {
       required: true,
     },
   },
+  
+  // NEEDS TO BE MOVED TO PARENT COMPONENT
+  // data() {
+  //   return {
+  //     chargers: [],
+  //   };
+  // },
+  // async mounted() {
+  //   let result = await axios.get("http://localhost:3000/");
+  //   this.chargers = result.data.chargers;
+  //   console.log(this.chargers);
+  // },
 };
 </script>
 
