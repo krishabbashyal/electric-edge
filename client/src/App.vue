@@ -1,36 +1,12 @@
 <template>
   <div>
+    <!-- DO NOT MAKE EDITS TO THIS FILE FOR TESTING |||| CREATE A NEW PAGE TO TEST NEW COMPONENTS -->
     <router-view></router-view>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <navigation-bar />
-    <error-404-not-found />
-    <hero-section />
-    <about-application />
-    <application-footer/>
-    <how-it-works />
-    <landing-page-footer />
-    <div v-for="charger in chargers" :key="charger.id">
-      <charger-card :chargerData="charger" />
-    </div> -->
   </div>
 </template>
 
+
 <script>
-
-
-
-
 export default {
   name: "App",
 };
