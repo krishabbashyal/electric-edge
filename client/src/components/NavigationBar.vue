@@ -79,8 +79,10 @@ export default {
   border-bottom: 1px solid rgba(0, 0, 0, 0.301);
 }
 
+/* this is what i changed to fix the spacing */
 .header-spacing {
-  padding-bottom: 7rem;
+  height: 6rem;
+  /* padding-bottom: 7rem; */
 }
 
 h1 {
