@@ -16,31 +16,24 @@ export default {
 <style scoped>
 .footer {
   background-color: #ffffff;
-  width: calc(100%);
+  width: 100%;
   height: 7rem;
+  padding-bottom: .25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.301);
   background: linear-gradient(180deg, #090724 30.21%, #002b6c 100%);
-
-  padding-bottom: .5rem;
-  position: absolute;
-  bottom: 0;
+  text-align: center;
 }
 
 h1 {
   color: #ffffff;
-  text-align: center;
   font-size: 1.55rem;
   padding-top: 1rem;
-  font-style: normal;
   font-weight: 900;
-  line-height: 2rem;
 }
 
 p {
   text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1.2rem;
   color: #ffffff;
 }
