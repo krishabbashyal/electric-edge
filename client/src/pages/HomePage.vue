@@ -29,10 +29,6 @@ export default {
   src: url("~@/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
-.content{
-    min-height: 80vh;
-}
-
 * {
   font-family: "Inter";
   margin: 0;

@@ -2,6 +2,9 @@
   <div class="charger-list">
     <div v-if="chargers.length === 0" class="loadingContainer">
       <loading-spinner/>
+      <p>**Loading is slowed to show animation effects**</p>
+      <p>If nothing is loading after 5 seconds</p>
+      <p>Please ensure that you have the server running</p>
     </div>
     <div v-for="charger in chargers" :key="charger.id">
         <charger-card :chargerData="charger" />
@@ -29,7 +32,7 @@ export default {
   },
 
   async mounted() {
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 4000));
     let result = await axios.get("http://localhost:3000/");
     this.chargers = result.data.chargers;
     console.log(this.chargers);
