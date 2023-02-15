@@ -13,12 +13,13 @@ import NavigationBar from "../components/NavigationBar.vue";
 import ChargerList from "../components/ChargerList.vue";
 import ApplicationFooter from "../components/ApplicationFooter.vue";
 
+
 export default {
   name: "HomePage",
   components: {
     NavigationBar,
     ChargerList,
-    ApplicationFooter
+    ApplicationFooter,
   },
 };
 </script>
