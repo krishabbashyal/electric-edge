@@ -1,8 +1,13 @@
 <template>
   <div class="loadingContainer">
     <div class="contentFloat">
-      <h1 class="loadingText">Loading</h1>
-      <p>This should not take long</p>
+      <h1 class="mainText">Loading</h1>
+      <p class="additonalText">This should not take long</p>
+      <br>
+      <h3>Development Notice:</h3>
+      <p>Loading is slowed to show loading effects.</p>
+      <p>If nothing is loading after 5 seconds</p>
+      <p>Please ensure that you have the server running on your machine</p>
       <div class="animation">
         <div></div>
         <div></div>
@@ -27,7 +32,7 @@ export default {
   /* SECOND VALUE IN THIS LINE IS THE MARGIN + PADDING ON THE HEADER AND FOOTER */
 }
 
-p {
+.additonalText {
   color: #0066ff;
 }
 
