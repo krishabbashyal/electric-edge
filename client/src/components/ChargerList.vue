@@ -2,13 +2,14 @@
   <div class="charger-list">
     <div v-if="chargers.length === 0" class="loadingContainer">
       <loading-spinner/>
-      <p>**Loading is slowed to show animation effects**</p>
-      <p>If nothing is loading after 5 seconds</p>
-      <p>Please ensure that you have the server running</p>
     </div>
-    <div v-for="charger in chargers" :key="charger.id">
-        <charger-card :chargerData="charger" />
-    </div> 
+    <div v-else>
+      <city-select-scroller/>
+      <div v-for="charger in chargers" :key="charger.id">
+          <charger-card :chargerData="charger" />
+      </div> 
+    </div>
+
   </div>
 </template>
 
@@ -16,13 +17,15 @@
 
 import ChargerCard from "./ChargerCard.vue"
 import LoadingSpinner from "./LoadingSpinner.vue"
+import CitySelectScroller from "./CitySelectScroller.vue"
 import axios from "axios"
 
 export default {
   name: "ChargerList",
   components: {
     ChargerCard,
-    LoadingSpinner
+    LoadingSpinner,
+    CitySelectScroller
   },
   
   data() {
