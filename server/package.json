@@ -1,9 +1,23 @@
 {
+  "name": "electroc-edge",
+  "version": "1.0.0",
+  "description": "ElectricEdge",
+  "main": "app.js",
+  "repository": "https://github.com/krishabbashyal/electric-edge",
+  "author": "Krishab Bashyal and Team",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
