@@ -4,7 +4,9 @@
       <loading-spinner/>
     </div>
     <div v-else>
-      <city-select-scroller/>
+      <div class="flex justify-center items-center">
+        <city-select-scroller/> 
+      </div>
       <div v-for="charger in chargers" :key="charger.id">
           <charger-card :chargerData="charger" />
       </div> 

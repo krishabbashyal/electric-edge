@@ -4,6 +4,7 @@ import App from './App.vue'
 
 import LandingPage from './pages/LandingPage'
 import HomePage from './pages/HomePage'
+import './assets/tailwind.css'
 
 
 const app = createApp(App)
