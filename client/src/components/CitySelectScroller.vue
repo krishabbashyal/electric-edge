@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row overflow-scroll whitespace-nowrap ml-6 mt-4 py-2.5 scroll-auto">
+  <div class="flex flex-row overflow-scroll whitespace-nowrap ml-6 mt-4 py-2.5 scroll-auto hideScroll">
     <div class="last:mr-6" v-for="city in cities" :key="city">
       <city-select-button :city="city" />
     </div>
