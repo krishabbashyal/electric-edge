@@ -20,7 +20,23 @@
 
 ## Local Setup Steps:
 
-For work on the client side, you should install the Vetur extention for Visual Studio Code
+Clone the repo on to your local machine
+
+### Client Side Setup
+
+`CD client`
+
+`npm install`
+
+`npm run serve`
+
+### Server Side Setup
+
+`CD server`
+
+`Run npm install`
+
+`nodemon app.js`
 
 ## Our Development Workflow:
 - **Kanban Software & Project Management Tool**: We will be making use of a Kanban board to keep everyone on the same page in terms of progression and what everyone is currently working on.
