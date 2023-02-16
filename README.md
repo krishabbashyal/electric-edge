@@ -24,7 +24,7 @@ Clone the repo on to your local machine
 
 ### Client Side Setup
 
-`CD client`
+`cd client`
 
 `npm install`
 
@@ -32,7 +32,7 @@ Clone the repo on to your local machine
 
 ### Server Side Setup
 
-`CD server`
+`cd server`
 
 `Run npm install`
 
