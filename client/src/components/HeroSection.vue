@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>We are changing the charging game.</h1>
+    <h1 class="textContent">We are changing the charging game.</h1>
     <p>The easiest way to find chargers on the go.</p>
     <img
       src="../assets/images/ElectricEdgeHero.png"
@@ -19,7 +19,7 @@ export default {
 * {
   letter-spacing: 0.03rem;
 }
-h1 {
+.textContent {
   font-size: 2.2rem;
   width: 19rem;
   text-align: center;

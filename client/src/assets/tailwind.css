@@ -1,0 +1,6 @@
+/* @tailwind base; */
+/* @tailwind components; */
+/* Not sure why thse lines is breaking the application, adding this line messed up some of the CSS that existed prior to adding the Tailwind */
+
+
+@tailwind utilities;
