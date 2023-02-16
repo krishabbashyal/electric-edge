@@ -37,10 +37,14 @@ export default {
   },
 
   async mounted() {
-    await new Promise(r => setTimeout(r, 4000));
-    let result = await axios.get("http://localhost:3000/");
-    this.chargers = result.data.chargers;
-    console.log(this.chargers);
+    if (process.env.VUE_APP_ENVIRONMENT === "Production"){
+      let result = await axios.get(process.env.VUE_APP_PRODUCTION_API);
+      this.chargers = result.data.chargers;
+    }
+    else{
+      let result = await axios.get(process.env.VUE_APP_DEVELOPMENT_API);
+      this.chargers = result.data.chargers;
+    }
   },
 };
 </script>
