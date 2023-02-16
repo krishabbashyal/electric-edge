@@ -1,7 +1,7 @@
 <template>
   <div class="loadingContainer">
     <div class="contentFloat">
-      <h1 class="mainText">Loading</h1>
+      <h1>Loading</h1>
       <p class="additonalText">This should not take long</p>
       <br>
       <h3>Development Notice:</h3>
