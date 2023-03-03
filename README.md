@@ -34,7 +34,7 @@ Clone the repo on to your local machine
 
 `cd server`
 
-`Run npm install`
+`npm install`
 
 `nodemon app.js`
 
