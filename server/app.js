@@ -1,35 +1,17 @@
-const express = require('express');
+const express = require('express')
 const cors = require('cors')
-
-const app = express();
-app.use(cors())
-
+const {errorHandler} = require("./middleware/errorMiddleware")
 const PORT = 3000;
 
-app.get('/', (req, res) => {
-    res.status(200);
-    res.json({
-        "chargers": [{
-            "image": "DallasCharger.png",
-            "location": "Dallas, TX",
-            "type": "Level 2 J-1772 charger",
-            "price": "5.40/hr"
-        },
-        {
-            "image": "ShreveportCharger.png",
-            "location": "Shreveport, LA",
-            "type": "Level 3 CCS2 charger",
-            "price": "19.35/hr"
-        },
-        {
-            "image": "HotSpringsCharger.png",
-            "location": "Hot Springs, AR",
-            "type": "Level 2 J-1772 charger",
-            "price": "9.35/hr"
-        }
-        ]
-    });
-});
+const app = express();
+
+app.use(cors())
+
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
+app.use("/", require('./routes/chargerRoutes'))
+app.use(errorHandler)
 
 app.listen(PORT, (error) => {
     if (!error)
