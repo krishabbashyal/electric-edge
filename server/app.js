@@ -1,8 +1,12 @@
 const express = require('express')
+require('dotenv').config();
 const cors = require('cors')
 const {errorHandler} = require("./middleware/errorMiddleware")
-const PORT = 3000;
+const connectDB = require("./config/db")
 
+
+const PORT = process.env.PORT;
+connectDB()
 const app = express();
 
 app.use(cors())

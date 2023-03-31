@@ -1,29 +1,13 @@
 const asyncHandler = require('express-async-handler')
 
+const Charger = require("../models/chargersModel")
+
 const getChargers = asyncHandler(async (req, res) => {
+    const chargers = await Charger.find()
     res.status(200);
-    res.json({
-        "chargers": [{
-            "image": "DallasCharger.png",
-            "location": "Dallas, TX",
-            "type": "Level 2 J-1772 charger",
-            "price": "5.40/hr"
-        },
-        {
-            "image": "ShreveportCharger.png",
-            "location": "Shreveport, LA",
-            "type": "Level 3 CCS2 charger",
-            "price": "19.35/hr"
-        },
-        {
-            "image": "HotSpringsCharger.png",
-            "location": "Hot Springs, AR",
-            "type": "Level 2 J-1772 charger",
-            "price": "9.35/hr"
-        }
-        ]
-    });
-})
+    res.json(chargers)
+});
+
 
 const hostCharger = asyncHandler(async (req, res) => {
     if(!(req.body.city)) {
@@ -38,30 +22,51 @@ const hostCharger = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error("Please add information about the type of charger")
     }
-    if(!(req.body.price)) {
+    if(!(req.body.hourlyRate)) {
         res.status(400)
         throw new Error("Please add the hourly rate of the charger")
     }
+
+    const charger = await Charger.create({
+        city: req.body.city,
+        state: req.body.state,
+        chargerType: req.body.chargerType,
+        hourlyRate: req.body.hourlyRate,
+        chargerDescription: req.body.chargerDescription
+    })
+
     res.status(200);
-    res.json({
-        "message": "Host a charger on the application for others to use!"
-    });
+    res.json(charger);
     console.log("Request accepted")
 
 });
 
 const editCharger = asyncHandler(async (req, res) => {
+    const charger = await Charger.findById(req.params.id)
+
+    if(!charger){
+        res.status(400)
+        throw new Error("Charger does not exist")
+    }
+
+    const updatedCharger = await Charger.findByIdAndUpdate(req.params.id, req.body, {new: true} )
+
     res.status(200);
-    res.json({
-        "message": `Edit details on charger ${req.params.id}`
-    });
+    res.json(updatedCharger);
 });
 
 const deleteCharger = asyncHandler(async (req, res) => {
+    const charger = await Charger.findById(req.params.id)
+
+    if(!charger){
+        res.status(400)
+        throw new Error("Charger does not exist")
+    }
+
+    await Charger.findByIdAndDelete(req.params.id, req.body)
+
     res.status(200);
-    res.json({
-        "message": `Delete charger ${req.params.id}`
-    });
+    res.json({"message": `Charger ${req.params.id} has been deleted`});
 });
 
 module.exports = {
