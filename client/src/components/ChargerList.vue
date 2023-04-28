@@ -1,7 +1,10 @@
 <template>
   <div class="charger-list">
-    <div v-if="chargers.length === 0" class="loadingContainer">
+    <div v-if="loading" class="loadingContainer">
       <loading-spinner/>
+    </div>
+    <div v-if="chargers.length === 0" class="h-72">
+      No data
     </div>
     <div v-else>
       <div class="flex justify-center items-center">
@@ -33,6 +36,7 @@ export default {
   data() {
     return {
       chargers: [],
+      loading: true
     };
   },
 
@@ -43,7 +47,8 @@ export default {
     }
     else{
       let result = await axios.get(process.env.VUE_APP_DEVELOPMENT_API);
-      this.chargers = result.data.chargers;
+      console.log(result)
+      this.loading = false
     }
   },
 };

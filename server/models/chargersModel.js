@@ -1,6 +1,11 @@
 const mongoose = require("mongoose")
 
 const chargerSchema = mongoose.Schema({
+    chargerOwner: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: "User"
+    },
     city: {
         type: String,
         required: [true, "Please add city"],

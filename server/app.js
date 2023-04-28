@@ -15,6 +15,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use("/", require('./routes/chargerRoutes'))
+app.use("/users", require('./routes/userRoutes'))
+
 app.use(errorHandler)
 
 app.listen(PORT, (error) => {
